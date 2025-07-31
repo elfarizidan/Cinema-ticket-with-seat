@@ -1,7 +1,7 @@
 import time
 
 daftar_kursi = {
-    'Avengers: Endgame': {
+    'Sore': {
         'A': [''] * 15,
         'B': [''] * 15,
         'C': [''] * 15,
@@ -13,7 +13,7 @@ daftar_kursi = {
         'I': [''] * 15,
         'J': [''] * 15
     },
-    'Joker': {
+    'Jurrassic World': {
         'A': [''] * 15,
         'B': [''] * 15,
         'C': [''] * 15,
@@ -25,7 +25,7 @@ daftar_kursi = {
         'I': [''] * 15,
         'J': [''] * 15
     },
-    'The Lion King': {
+    'Oppenheimer': {
         'A': [''] * 15,
         'B': [''] * 15,
         'C': [''] * 15,
@@ -37,7 +37,7 @@ daftar_kursi = {
         'I': [''] * 15,
         'J': [''] * 15
     },
-    'Spider-Man: Far From Home': {
+    'Superman': {
         'A': [''] * 15,
         'B': [''] * 15,
         'C': [''] * 15,
@@ -49,7 +49,7 @@ daftar_kursi = {
         'I': [''] * 15,
         'J': [''] * 15
     },
-    'Frozen II': {
+    'Fantastic 4': {
         'A': [''] * 15,
         'B': [''] * 15,
         'C': [''] * 15,
@@ -68,11 +68,11 @@ harga_VIP = 100000
 total_pendapatan = 0  # Menyimpan total pendapatan
 
 daftar_film = [
-    "Avengers: Endgame",
-    "Joker",
-    "The Lion King",
-    "Spider-Man: Far From Home",
-    "Frozen II"
+    "Sore",
+    "Jurrassic World",
+    "Oppenheimer",
+    "Superman",
+    "Fantastic 4"
 ]
 
 def tampil_daftar_kursi(film):
@@ -174,7 +174,7 @@ while True:
 
                     if pilih_kelas_tiket == 1:
                         jumlah_kursi, total_harga, kursi_dipesan = pilih_bangku(daftar_kursi, film_dipilih, harga_VIP)  # Perbaikan disini
-                        metode_pembayaran = input("Pilih metode pembayaran (Cash/Debit): ")
+                        metode_pembayaran = input("Pilih metode pembayaran (1. Cash/2. Debit): ")
                         if metode_pembayaran.lower() == '1':
                             total_pembayaran = proses_pembayaran(total_harga)
                             totalpendapatan()  # Menampilkan total pendapatan saat ini
